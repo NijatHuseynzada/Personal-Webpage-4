@@ -1,0 +1,160 @@
+/* Global Styles for Body */
+body {
+    background-color: #f0f8ff; /* Soft light blue */
+    font-family: 'Verdana', sans-serif; /* Modern font style */
+    width: 90%;
+    margin: 0 auto; /* Center the body */
+    text-align: center; /* Center text */
+    padding-top: 60px; /* Add space for fixed navbar */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333; /* Dark background */
+    position: fixed; /* Fixed to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Padding for navbar */
+    z-index: 1000; /* On top of other content */
+}
+
+nav a {
+    color: white; /* White text */
+    padding: 14px 20px; /* Space around links */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+    background-color: #555; /* Change background on hover */
+    color: white; /* Keep text white */
+}
+
+/* Active Link Styles */
+nav a.active {
+    background-color: #4CAF50; /* Green background for active */
+    color: white; /* Keep text white */
+}
+
+/* Horizontal Rule Styles */
+hr {
+    width: 50%; /* Shorter width */
+    margin: 20px auto; /* Center it */
+    border: 2px dashed #000; /* Thicker dashed line */
+}
+
+/* Profile Image Styles */
+.profile-container {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Space around */
+}
+
+.profile-container img {
+    width: 200px; /* Circular width */
+    height: 200px; /* Circular height */
+    border-radius: 50%; /* Makes the image circular */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.profile-container img:hover {
+    width: 220px; /* Grows on hover */
+    height: 220px; /* Grows on hover */
+}
+
+/* Biography Styles */
+.bio {
+    max-width: 600px; /* Limit bio width */
+    margin-left: 20px; /* Space between image and bio */
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex; /* Flexbox for gallery */
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: center; /* Center items */
+    margin: 20px 0; /* Space around gallery */
+}
+
+.gallery img {
+    width: 30%; /* 3 images per row */
+    margin: 10px; /* Space between images */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Grow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 90%; /* 1 image per row for mobile */
+    }
+}
+
+/* Table Styles for Education Page */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 20px 0; /* Space around table */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Light border for table */
+}
+
+th, td {
+    padding: 10px; /* Space inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row color */
+}
+
+/* List Styles for Lists Across the Website */
+ul {
+    list-style-type: circle; /* Circle bullets */
+    padding-left: 20px; /* Padding for bullets */
+    margin-bottom: 20px; /* Space below list */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Form Styles for Contact Me Page */
+form {
+    max-width: 500px; /* Limit form width */
+    margin: 20px auto; /* Center form */
+    padding: 20px; /* Space inside form */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for form */
+}
+
+input, textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Space inside inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Space around button */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
